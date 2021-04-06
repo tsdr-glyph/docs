@@ -1,11 +1,11 @@
 export default {
-  repository: 'https://github.com/shuding/nextra',
-  titleSuffix: ' – Nextra',
+  repository: 'https://github.com/construct-rpg/docs',
+  titleSuffix: '',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Construct Docs</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next Site Builder
+        The Next Gen Modular RPG System
       </span>
     </>
   ),
@@ -37,5 +37,5 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditOnGitHubLink: true,
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>
+  footerText: <>MIT {new Date().getFullYear()} © <a href="https://github.com/tionis">Tionis</a></>
 }

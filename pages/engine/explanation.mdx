@@ -1,0 +1,33 @@
+# Rules Engine
+
+The Construct Rules Engine is an application allowing someone to create custom rulebooks for construct systems.  
+To use the webapp, first create a construct bundle file along the lines of this:
+```toml
+moduleType = "bundle"
+displayName = "Core Bundle"
+
+[[dependencies]]
+url = "https://github.com/construct-rpg/core-rules.git"
+version = "main" # Use latest commit on main
+ 
+[[dependencies]]
+url = "https://github.com/construct-rpg/core-traits.git"
+version = "v1.0" # Use commit tagged with v1.0
+
+[[dependencies]]
+url = "https://github.com/construct-rpg/non-existant-module-with-options.git"
+version = "main"
+
+[[dependencies.options]] # Options for non existant module with options
+option1 = true
+```
+
+When you have created it, either upload it to a webserver or create a github gist(filename = config.toml) with it.  
+Then you need to create a config string after following rules:
+- If you used github-gists: gh-gist:GIST_ID_WHERE_CONFIG_WAS_SAVED
+- If you used a webserver: url:URL_TO_DOWNLOAD_CONFIG
+
+These config strings are then url encoded and appended to the following url:   
+https://rules.construct-rpg.net/gen/
+
+If you want help generating your config string use the web-app at https://rules.construct-rpg.net/gen-config-string/ .

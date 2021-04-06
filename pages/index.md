@@ -1,7 +1,3 @@
-# Nextra
+# Construct Docs
 
-**Nextra** is a [Next.js](https://nextjs.org) based static site generator. 0 lines of code needed.  
-
-It supports Markdown with React components ([MDX](/mdx)), automatically generated [sidebar and anchor links](/docs/anchors), file-system based routing, built-in syntax highlighting, i18n and more.
-
-![](/demo.png)
+**Construct RPG** is an opinionated framework of rules and software to design your own custom role playing system. It allow you to build your own bundle of rules by utilizing git repositories following the construct format and a config file. With this you can the generate a simple rule book.
