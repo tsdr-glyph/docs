@@ -18,7 +18,7 @@ export default {
       <meta name="description" content="Construct Docs: Docs for the Next Gen Modular RPG System" />
       <meta name="og:description" content="Construct Docs: Docs for the Next Gen Modular RPG System" />
       <meta name="og:title" content="Construct Docs: Docs for the Next Gen Modular RPG System" />
-      /<meta name="og:image" content="https://avatars.githubusercontent.com/u/81921755?s=200&v=4" />
+      /<meta name="og:image" content="https://docs.construct-rpg.net/construct-docs.png" />
       <meta name="apple-mobile-web-app-title" content="Nextra" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"/>
       <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png"/>
