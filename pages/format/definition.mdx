@@ -1,5 +1,6 @@
 # Definition
 
+## General Explanation
 Construct is based on the Notion of modules. Each module is defined by its (git)-url, version and (optional) options.  
 Each Modules live in its own git repository available over http, versioned with git tags. If the version name equals a branch name the latest commit in that branch is used.  
 At the root of a module lays the config.toml which contains the moduleType which defines the type of the module. Following module types are valid:
@@ -12,3 +13,10 @@ At the root of a module lays the config.toml which contains the moduleType which
 A rules module contains rules, traits or equipment lists. These are located in subfolders whose location is defined via the config variables rulesFolder, traitsFolder and equipmentFolder respectivly, where an emtpy string as value means that the module doesn't contain rules/traits/equipment.  
 A chars module only contains character sheets, whose location is defined depending on the types (array of strings) given as option. The type given as option is used to find the value of the characterSheets dictionary with the type name as key. This value contains a location attribute pointing to a file containing the character sheet. If no option is given all character sheet types are used.  
 A bundle module only contains a dictionary of dependencies (url, version, (options(dict))). It is used as a rule set to generate a rulebook.
+
+## Subfolder Formats
+### Rules
+Contains an config.toml defining the fileFormat (only markdown supported for now) and an array of string called fileOrder which defined which files are processed in which order.
+
+### Traits & Equipment
+Contains a config.toml defining an traits/equipment dictionary with sub-dictionaries that defines categories. These sub-dictionaries contain a attribute called fileName whhich points to another toml file which contains an array of dicts, each defining one trait/equipment.
