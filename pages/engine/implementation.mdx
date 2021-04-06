@@ -1,12 +1,12 @@
 # Implementation Details
-Given a config string the rules engine does follwoing in that order:
+Given a config string the rules engine does following in that order:
 1. Fetch the config.toml via its parser and download helper
 2. Parse the config.toml and check that it has the required attributes
 3. Go to the first not already processed dependency
 4. Download it and check if a branch with the given version name exists
 5. Check out the commit
 6. Parse config.toml (read type, defaults)
-7. Apply go templates on files
-8. Render Files and append them to the existing document also appending to the TOC
-9. Go to 3. until finished.
-10. Show the rendered document to the user.
+7. Check for conflicts in the dependencies of the modules
+8. Apply go templates on files
+9. Render Files and append them to the existing document also appending to the TOC
+10. Go to 3. until finished.
