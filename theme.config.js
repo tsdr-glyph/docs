@@ -15,14 +15,10 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Nextra: the next site builder" />
-      <meta name="og:description" content="Nextra: the next site builder" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
-      <meta name="og:title" content="Nextra: Next.js static site generator" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
+      <meta name="description" content="Construct Docs: Docs for the Next Gen Modular RPG System" />
+      <meta name="og:description" content="Construct Docs: Docs for the Next Gen Modular RPG System" />
+      <meta name="og:title" content="Construct Docs: Docs for the Next Gen Modular RPG System" />
+      /<meta name="og:image" content="https://avatars.githubusercontent.com/u/81921755?s=200&v=4" />
       <meta name="apple-mobile-web-app-title" content="Nextra" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"/>
       <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png"/>
